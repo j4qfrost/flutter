@@ -19,6 +19,7 @@ const List<String> _kLinuxArtifacts = <String>[
   'flutter_messenger.h',
   'flutter_plugin_registrar.h',
   'flutter_glfw.h',
+  'flutter_texture_registrar.h',
   'icudtl.dat',
   'cpp_client_wrapper_glfw/',
 ];
