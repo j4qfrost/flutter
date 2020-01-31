@@ -20,7 +20,7 @@ const Map<TargetPlatform, String> flutterArtifactPlatformDirectory = <TargetPlat
 // directory.
 const Map<TargetPlatform, List<String>> artifactFilesByPlatform = <TargetPlatform, List<String>>{
   TargetPlatform.linux_x64: <String>[
-    'libflutter_linux.so',
+    'libflutter_linux_glfw.so',
     'flutter_export.h',
     'flutter_messenger.h',
     'flutter_plugin_registrar.h',
