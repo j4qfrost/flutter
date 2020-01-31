@@ -27,7 +27,7 @@ const Map<TargetPlatform, List<String>> artifactFilesByPlatform = <TargetPlatfor
     'flutter_texture_registrar.h',
     'flutter_glfw.h',
     'icudtl.dat',
-    'cpp_client_wrapper/',
+    'cpp_client_wrapper_glfw/',
   ],
   TargetPlatform.darwin_x64: <String>[
     'FlutterMacOS.framework',
