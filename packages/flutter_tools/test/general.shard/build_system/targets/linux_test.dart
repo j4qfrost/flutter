@@ -44,6 +44,7 @@ void main() {
       globals.fs.file('bin/cache/artifacts/engine/linux-x64/flutter_export.h').createSync();
       globals.fs.file('bin/cache/artifacts/engine/linux-x64/flutter_messenger.h').createSync();
       globals.fs.file('bin/cache/artifacts/engine/linux-x64/flutter_plugin_registrar.h').createSync();
+      globals.fs.file('bin/cache/artifacts/engine/linux-x64/flutter_texture_registrar.h').createSync();
       globals.fs.file('bin/cache/artifacts/engine/linux-x64/flutter_glfw.h').createSync();
       globals.fs.file('bin/cache/artifacts/engine/linux-x64/icudtl.dat').createSync();
       globals.fs.file('bin/cache/artifacts/engine/linux-x64/cpp_client_wrapper_glfw/foo').createSync(recursive: true);
@@ -62,6 +63,7 @@ void main() {
     expect(globals.fs.file('linux/flutter/ephemeral/flutter_export.h').existsSync(), true);
     expect(globals.fs.file('linux/flutter/ephemeral/flutter_messenger.h').existsSync(), true);
     expect(globals.fs.file('linux/flutter/ephemeral/flutter_plugin_registrar.h').existsSync(), true);
+    expect(globals.fs.file('linux/flutter/flutter_texture_registrar.h').existsSync(), true);
     expect(globals.fs.file('linux/flutter/ephemeral/flutter_glfw.h').existsSync(), true);
     expect(globals.fs.file('linux/flutter/ephemeral/icudtl.dat').existsSync(), true);
     expect(globals.fs.file('linux/flutter/ephemeral/cpp_client_wrapper_glfw/foo').existsSync(), true);

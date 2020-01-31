@@ -153,3 +153,23 @@ class DebugBundleLinuxAssets extends Target {
     depfile.writeToFile(environment.buildDir.childFile('flutter_assets.d'));
   }
 }
+
+/// Copies the Linux desktop embedding files to the copy directory.
+const Target unpackLinux = Target(
+  name: 'unpack_linux',
+  inputs: <Source>[
+    Source.artifact(Artifact.linuxDesktopPath),
+  ],
+  outputs: <Source>[
+    Source.pattern('{PROJECT_DIR}/linux/flutter/libflutter_linux.so'),
+    Source.pattern('{PROJECT_DIR}/linux/flutter/flutter_export.h'),
+    Source.pattern('{PROJECT_DIR}/linux/flutter/flutter_messenger.h'),
+    Source.pattern('{PROJECT_DIR}/linux/flutter/flutter_plugin_registrar.h'),
+    Source.pattern('{PROJECT_DIR}/linux/flutter/flutter_texture_registrar.h'),
+    Source.pattern('{PROJECT_DIR}/linux/flutter/flutter_glfw.h'),
+    Source.pattern('{PROJECT_DIR}/linux/flutter/icudtl.dat'),
+    Source.pattern('{PROJECT_DIR}/linux/flutter/cpp_client_wrapper/*'),
+  ],
+  dependencies: <Target>[],
+  buildAction: copyLinuxAssets,
+);

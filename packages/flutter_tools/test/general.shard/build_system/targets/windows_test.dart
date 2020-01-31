@@ -27,6 +27,7 @@ void main() {
     Cache.flutterRoot = '';
   });
 
+<<<<<<< HEAD
   setUp(() {
     platform = MockPlatform();
     when(platform.isWindows).thenReturn(true);
@@ -46,6 +47,7 @@ void main() {
       globals.fs.file(r'C:\bin\cache\artifacts\engine\windows-x64\lutter_export.h').createSync();
       globals.fs.file(r'C:\bin\cache\artifacts\engine\windows-x64\flutter_messenger.h').createSync();
       globals.fs.file(r'C:\bin\cache\artifacts\engine\windows-x64\flutter_plugin_registrar.h').createSync();
+      globals.fs.file(r'C:\bin\cache\artifacts\engine\windows-x64\flutter_texture_registrar.h').createSync();
       globals.fs.file(r'C:\bin\cache\artifacts\engine\windows-x64\flutter_windows.h').createSync();
       globals.fs.file(r'C:\bin\cache\artifacts\engine\windows-x64\icudtl.dat').createSync();
       globals.fs.file(r'C:\bin\cache\artifacts\engine\windows-x64\cpp_client_wrapper\foo').createSync(recursive: true);
@@ -70,6 +72,7 @@ void main() {
     expect(globals.fs.file(r'C:\windows\flutter\flutter_export.h').existsSync(), true);
     expect(globals.fs.file(r'C:\windows\flutter\flutter_messenger.h').existsSync(), true);
     expect(globals.fs.file(r'C:\windows\flutter\flutter_plugin_registrar.h').existsSync(), true);
+    expect(globals.fs.file(r'C:\windows\flutter\flutter_texture_registrar.h').existsSync(), true);
     expect(globals.fs.file(r'C:\windows\flutter\flutter_windows.h').existsSync(), true);
     expect(globals.fs.file(r'C:\windows\flutter\icudtl.dat').existsSync(), true);
     expect(globals.fs.file(r'C:\windows\flutter\cpp_client_wrapper\foo').existsSync(), true);

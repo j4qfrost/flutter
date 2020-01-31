@@ -19,6 +19,19 @@ const Map<TargetPlatform, String> flutterArtifactPlatformDirectory = <TargetPlat
 // TODO(jonahwilliams): this should come from a configuration in each build
 // directory.
 const Map<TargetPlatform, List<String>> artifactFilesByPlatform = <TargetPlatform, List<String>>{
+  TargetPlatform.linux_x64: <String>[
+    'libflutter_linux.so',
+    'flutter_export.h',
+    'flutter_messenger.h',
+    'flutter_plugin_registrar.h',
+    'flutter_texture_registrar.h',
+    'flutter_glfw.h',
+    'icudtl.dat',
+    'cpp_client_wrapper/',
+  ],
+  TargetPlatform.darwin_x64: <String>[
+    'FlutterMacOS.framework',
+  ],
   TargetPlatform.windows_x64: <String>[
     'flutter_windows.dll',
     'flutter_windows.dll.exp',
@@ -28,6 +41,8 @@ const Map<TargetPlatform, List<String>> artifactFilesByPlatform = <TargetPlatfor
     'flutter_messenger.h',
     'flutter_plugin_registrar.h',
     'flutter_windows.h',
+    'flutter_texture_registrar.h',
+    'flutter_glfw.h',
     'icudtl.dat',
     'cpp_client_wrapper/',
   ],
